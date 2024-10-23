@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d4a818;
+  }
+  
+  h1, h2 {
+    margin: 0 0 10px;
+  }
+  
+  p {
+    margin: 0 0 20px;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  /* Header: Flexbox Navigation */
+  header {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
+  /* Responsive stacking for navigation */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Main Section: About & Skills - CSS Grid */
+  main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .about, .skills {
+    padding: 20px;
+  }
+  
+  .about {
+    background-color: #f4f4f4;
+  }
+  
+  .skills {
+    background-color: #e2e2e2;
+  }
+  
+  .skills ul {
+    padding-left: 20px;
+  }
+  
+  /* Responsive grid stacking for smaller screens */
+  @media (max-width: 800px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Projects Section: CSS Grid */
+  .projects-grid {
+    padding: 20px;
+  }
+  
+  .projects-grid h2 {
+    text-align: center;
+  }
+  
+  .projects-grid .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .projects-grid .project {
+    background-color: #e3e3e3;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Responsive project grid */
+  @media (max-width: 900px) {
+    .projects-grid .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .projects-grid .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Image Gallery: CSS Grid */
+  .gallery {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Responsive gallery grid */
+  @media (max-width: 900px) {
+    .gallery
+  
